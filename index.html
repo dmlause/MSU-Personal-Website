@@ -1,31 +1,81 @@
 <!DOCTYPE html>
-<html lang = "en">
+<html lang="en">
 
-	<head>
+<head>
 		<meta charset = "UTF-8" />
-		<link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="./css/index.css">
+		<link rel="stylesheet" href="./css/bootstrap.min.css">
 		<title> Derek Lause</title>
-	</head>
+
+	<script src="./js/jquery-3.2.1.js" type="text/javascript"></script>
+	<script src="./js/knockout-3.4.2.js" type="text/javascript"></script>
+	<script src="./js/index.js" type="text/javascript"></script>
+	<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</head>
 
 <body>
 
-	<h1 class = "name"> <center> Welcome to Derek Lause's website!</center> </h1>
-
-<div class = "container">
 	<center>
+		<div class="container">
+			<div class="page-header">
+				<h1> Derek Lause </h1>
+			</div>
+		</div>
 	<div class = "btn-group">
-		<button type="button" class="btn btn-primary">Home</button>
-		<button type="button" class="btn btn-primary">Projects</button>
-		<button type="button" class="btn btn-primary">Résumé</button>
-		<button type="button" class="btn btn-primary">Hobbies</button>
-		<button type="button" class="btn btn-primary">Achievements and goals</button>
+		<button class="btn btn-primary" data-bind="click: gotoHome">Home</button>
+		<button class="btn btn-primary" data-bind="click: gotoProjects">Projects</button>
+		<button class="btn btn-primary" data-bind="click: gotoHobbies">Hobbies</button>
+		<button class="btn btn-primary" data-bind="click: gotoGoals">Goals</button>
+		<button class="btn btn-primary" data-bind="click: gotoContact">Contact Derek</button>
 	</div>
-	</center>
-</div>
+</center>
 
-<div>
-	This website is currently under construction. The website and its contents will be updated when developments are finished. Thank you.
+<div id="screen_holder" data-bind="template: {name: screen_holder}">
+	<!-- This div will hold the sccreen template that will be filled out further in the document -->
 </div>
 
 </body>
+
+<!-- ========================SCREEN TEMPLATES==================================================-->
+
+<!-- ========================HOME PAGE=========================================================-->
+<script type="text/html" id="home_page">
+	<div class="well well-lg">
+		<center><p>tesfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+			fdddddddd
+			dfffffffffffffffffff
+			dfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffd
+			dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+			dddddddddddddddddddddddddddddddddddddddd
+			dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddt</p>
+		</center>
+	</div>
+</script>
+<!-- ========================END OF HOME PAGE==================================================-->
+
+<!-- ========================PROJECTS PAGE=========================================================-->
+<script type="text/html" id="projects_page">
+	<h1> projects page </h1>
+</script>
+<!-- ========================END OF PROJECTS PAGE==================================================-->
+
+<!-- ========================HOBBIES PAGE=========================================================-->
+<script type="text/html" id="hobbies_page">
+	<h1> hobbies page </h1>
+</script>
+<!-- ========================END OF HOBBIES PAGE==================================================-->
+
+<!-- ========================GOALS PAGE=========================================================-->
+<script type="text/html" id="goals_page">
+	<h1> goals page </h1>
+</script>
+<!-- ========================END OF GOALS PAGE==================================================-->
+
+<!-- ========================CONTACT PAGE=========================================================-->
+<script type="text/html" id="contact_page">
+	<h1> contact page </h1>
+</script>
+<!-- ========================END OF CONTACT PAGE==================================================-->
+
+<!-- ========================END OF SCREEN TEMPALTES==============================================-->
 </html>
